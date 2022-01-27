@@ -37,6 +37,15 @@ Execute comandos com sua credencial aws para o deploy da infraestrutura.
 aws-vault exec <usuário>  -- bash
 terraform apply
 ```
+Após o apply, vai ser exposto no terminal o ip da instância ec2 criada.
+Exemplo:
+```sh
+Outputs:
+
+publicIP = "54.00.00.00"
+```
+Verifique a aplicação em http://54.00.00.00:8848/api/
+
 Para desmontar a infraestrutura.
 ```sh
 terraform destroy
