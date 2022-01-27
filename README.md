@@ -30,7 +30,7 @@ Enter Secret Key: %%%
 ##  Deploy Terraform 
 Iniciaize o terraform no projeto.
 ```sh
-terraform destroy
+terraform init
 ```
 Execute comandos com sua credencial aws para o deploy da infraestrutura.
 ```sh
