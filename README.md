@@ -43,7 +43,7 @@ Outputs:
 publicIP = "54.00.00.00"
 ```
 Verifique a aplicação em http://54.00.00.00:8848/api/
-- Pode ser que demore para subir os contêineres na instância, para verificar o log do cloud init no userdata acesse a instância via ssh e faça o comando:
+- Pode ser que demore para subir os contêineres na instância, para verificar o log do cloud init no userdata, acesse a instância via ssh e faça o comando:
 ```sh
 sudo cat /var/log/cloud-init-output.log
 ```
