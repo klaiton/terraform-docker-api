@@ -21,7 +21,7 @@ resource "aws_instance" "web" {
   tags = {
     Name = "maquina-teste-ec2"
   }
-  security_groups = [aws_security_group.sgteste.name]
+  security_groups = [aws_security_group.sgec2.name]
   user_data       = data.template_file.userdata.rendered
 }
 
