@@ -53,7 +53,7 @@ Para desmontar a infraestrutura.
 terraform destroy
 ```
 ##  Considerações
-- Para acessar a instância via SSH é nescessário modificar o key_name do recurso "aws_instance". Crie um par de chaves no Amazon EC2 da sua conta AWS, e moficique ou adicione em "ssh-authorized-keys: o conteudo da sua chave publica no cloud-config.
+- Para acessar a instância via SSH é nescessário modificar o key_name do recurso "aws_instance" do EC2, e o key_name do recurso aws_launch_configuration. Crie um par de chaves no Amazon EC2 da sua conta AWS, e moficique ou adicione em "ssh-authorized-keys: o conteudo da sua chave publica no cloud-config.
 
 - Para facilitar o acesso, foi implementado em sg.tf o _ingress_ para a porta 22 o acesso a qualquer IP, por segurança o correto é implementar para localhost.
 
